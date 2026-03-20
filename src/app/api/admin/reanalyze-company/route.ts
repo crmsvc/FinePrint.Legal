@@ -96,7 +96,7 @@ export async function POST(request: Request) {
     const { error } = await supabaseAdmin
       .from("companies")
       .update({
-        overall_grade: analysis.grade || "F",
+        overall_grade: analysis.grade && analysis.grade !== "N/A" ? analysis.grade : "F",
         verdict: analysis.verdict,
         analysis_json: analysis,
         last_analyzed_at: new Date().toISOString(),
