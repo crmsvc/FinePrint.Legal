@@ -31,6 +31,17 @@ export async function POST(request: Request) {
     );
   }
 
+  // Clear foreign key references before deleting
+  await supabaseAdmin
+    .from("pending_analyses")
+    .delete()
+    .eq("published_company_id", companyId);
+
+  await supabaseAdmin
+    .from("error_logs")
+    .delete()
+    .eq("company_id", companyId);
+
   const { error } = await supabaseAdmin
     .from("companies")
     .delete()
