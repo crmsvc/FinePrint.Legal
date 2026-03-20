@@ -1,0 +1,26 @@
+{
+  "slug": "non-exclusive-worldwide-license",
+  "title": "What Does \"Non-Exclusive Worldwide License\" Mean?",
+  "description": "When you agree to a Terms of Service, you often grant the company a 'non-exclusive, worldwide license' to your content. Here's what that actually means.",
+  "lastUpdated": "2026-03-13",
+  "relatedCompanies": ["instagram", "facebook", "x-twitter"],
+  "content": "## The Short Answer\n\nWhen a Terms of Service says you grant a \"non-exclusive, royalty-free, transferable, sub-licensable, worldwide license,\" it means the company can use your content — photos, videos, text, anything you upload — almost however they want, anywhere in the world, without paying you.\n\n## Breaking Down Each Word\n\n### \"Non-Exclusive\"\nThis means you still own your content. You can post it elsewhere, license it to others, or use it however you want. The company isn't claiming exclusive rights — they're claiming shared rights.\n\nThis is actually the least concerning part. Exclusive licenses would mean only the company could use your content.\n\n### \"Worldwide\"\nThe license applies globally. There are no geographic restrictions on how or where the company can use your content. Your photo posted in the US can be used in advertising campaigns in any country.\n\n### \"Royalty-Free\"\nThe company doesn't have to pay you for using your content. This is a big one — if they use your photo in an ad campaign that generates millions in revenue, you get nothing.\n\n### \"Transferable\" and \"Sub-Licensable\"\nThese are the words that should concern you most. \"Transferable\" means the company can pass your license to another company (including if they're acquired). \"Sub-licensable\" means they can let third parties use your content too — advertisers, partners, affiliates, AI training companies.\n\n### \"Perpetual\" vs. \"For the Duration of Your Account\"\nSome licenses last forever (perpetual), while others end when you delete your account. Check which one applies — it makes a big difference.\n\n## Real Examples\n\nInstagram's terms grant Meta a broad content license that covers virtually any use case. When you post a photo, Meta can use it for ads, AI training, and can sub-license it to partners.\n\nTikTok goes further with an \"irrevocable\" license, meaning even after you delete your content or account, TikTok retains the right to use it.\n\n## What This Means for You\n\n1. **Think before posting** — anything you upload could be used in ways you didn't expect\n2. **Read the specifics** — is the license perpetual? Irrevocable? Sub-licensable?\n3. **Keep originals** — don't post content exclusively on platforms with broad licenses\n4. **Check for changes** — companies update their terms regularly, often expanding the license\n\n## What You Can Do About It\n\nUnfortunately, there's no way to use most social platforms without granting these licenses — it's accept the terms or don't use the service. But you can:\n\n- Be selective about what you upload\n- Use platforms with more limited licenses when possible\n- Watermark valuable creative work\n- Keep your most important content on platforms you control (your own website, personal cloud storage)",
+  "faq": [
+    {
+      "question": "Does a non-exclusive license mean I lose ownership of my content?",
+      "answer": "No. A non-exclusive license means the company can use your content, but you still own it and can use it elsewhere. You retain copyright ownership."
+    },
+    {
+      "question": "Can a company sell my content under a non-exclusive license?",
+      "answer": "Potentially, yes — especially if the license is \"transferable\" and \"sub-licensable.\" These terms allow the company to pass the license to third parties, which could include commercial use."
+    },
+    {
+      "question": "What happens to my content license if I delete my account?",
+      "answer": "It depends on the specific terms. Some licenses end when you delete your account. Others — like TikTok's \"perpetual, irrevocable\" license — continue forever, even after account deletion."
+    },
+    {
+      "question": "Is a worldwide license normal in Terms of Service?",
+      "answer": "Yes, worldwide licenses are standard in most social media and content platform TOS. The internet is global, so companies need worldwide rights to display your content to users in other countries. The concerning part isn't \"worldwide\" — it's terms like \"sub-licensable\" and \"irrevocable.\""
+    }
+  ]
+}

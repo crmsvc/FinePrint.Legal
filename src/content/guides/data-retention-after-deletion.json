@@ -1,0 +1,26 @@
+{
+  "slug": "data-retention-after-deletion",
+  "title": "What Happens to Your Data After You Delete Your Account?",
+  "description": "Most services don't actually delete everything when you hit 'Delete Account.' Here's what really happens to your data and how long companies keep it.",
+  "lastUpdated": "2026-03-13",
+  "relatedCompanies": ["facebook", "uber", "reddit", "google"],
+  "content": "## The Short Answer\n\nDeleting your account almost never means deleting your data. Most companies retain some or all of your information for weeks, months, or even years after you click 'Delete Account.' Some data may never be fully removed.\n\n## Why Companies Keep Your Data\n\nThere are several reasons companies cite for retaining data after account deletion:\n\n**Legal compliance** — Tax laws, financial regulations, and court orders may require companies to keep transaction records, communications, or identity data for specific periods. This is legitimate and often legally required.\n\n**Fraud prevention** — Companies keep account identifiers to prevent banned users from creating new accounts and to detect patterns of abuse.\n\n**Backup systems** — Data in backup systems and disaster recovery archives can take weeks or months to cycle out as old backups are replaced with new ones.\n\n**Business intelligence** — Some companies retain anonymized or aggregated versions of your data for analytics and product improvement. The line between 'anonymized' and 're-identifiable' is blurry.\n\n## Retention Timelines by Company\n\nHere's how long major companies actually keep your data after deletion:\n\n- **Facebook (Meta):** 90-day deletion window, but some data persists in anonymized form indefinitely\n- **Google:** Most data deleted within 2 months, backup purge within 6 months\n- **Uber:** Trip records retained up to 7 years for regulatory compliance\n- **Reddit:** Posts in servers survive deletion (shown as [deleted] with content visible)\n- **Instagram:** Same as Facebook — 90-day window with backup persistence\n- **Amazon:** Purchase records and financial data retained for legal compliance periods\n\n## The Backup Problem\n\nEven companies with good deletion practices face the backup problem. Enterprise backup systems create copies of data across multiple locations. When you delete your account, the primary database is updated, but backup copies may persist until the backup cycle naturally overwrites them — typically 30 to 90 days.\n\nSome companies are transparent about this. Google, for example, explicitly states that backup deletion takes up to 6 months. Others are vague, using phrases like 'reasonable time' or 'as soon as practicable.'\n\n## What You Can Do\n\n1. **Delete content before deleting your account** — Remove posts, photos, and messages individually before account deletion. Some platforms handle individual content deletion differently than account deletion.\n\n2. **Export your data first** — Use data portability tools (Google Takeout, Facebook Download Your Information) before deletion so you have your own copy.\n\n3. **Check the privacy policy** — Look for specific retention periods. Vague language like 'as necessary' is a red flag.\n\n4. **Submit a formal deletion request** — In the EU (GDPR) and California (CCPA), you have the legal right to request deletion and receive confirmation. Exercise it.\n\n5. **Follow up** — Some services require follow-up to confirm deletion. Mark your calendar for 30-90 days after the request.",
+  "faq": [
+    {
+      "question": "Is my data really deleted when I delete my account?",
+      "answer": "Usually not immediately, and sometimes not completely. Most companies retain data in backups for 30-90 days and may keep certain records (financial transactions, legal compliance data) for years. Some data may persist in anonymized form indefinitely."
+    },
+    {
+      "question": "What's the difference between deactivation and deletion?",
+      "answer": "Deactivation temporarily hides your account but preserves all data — you can reactivate and everything returns. Deletion is meant to permanently remove your account and data, though retention policies still apply. Always choose deletion if you truly want to leave a service."
+    },
+    {
+      "question": "Can I use GDPR or CCPA to force deletion?",
+      "answer": "Yes, if you're in the EU or California. Both regulations give you the 'right to erasure' or 'right to delete.' Companies must comply and confirm deletion, with limited exceptions for legal obligations and fraud prevention. Submit a formal request through the platform's privacy settings or by contacting their data protection officer."
+    },
+    {
+      "question": "What about data that's already been shared with third parties?",
+      "answer": "This is the hardest part. Data already shared with advertisers, analytics partners, or AI training datasets may be impossible to recall. Under GDPR, companies must notify third parties of deletion requests, but enforcement is limited. Once your data enters an AI training dataset, it effectively cannot be extracted."
+    }
+  ]
+}
