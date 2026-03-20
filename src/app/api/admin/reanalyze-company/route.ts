@@ -91,12 +91,13 @@ export async function POST(request: Request) {
     }
 
     const previousGrade = company.overall_grade;
+    const storedGrade = analysis.grade && analysis.grade !== "N/A" ? analysis.grade : "F";
 
     // Update company record
     const { error } = await supabaseAdmin
       .from("companies")
       .update({
-        overall_grade: analysis.grade && analysis.grade !== "N/A" ? analysis.grade : "F",
+        overall_grade: storedGrade,
         verdict: analysis.verdict,
         analysis_json: analysis,
         last_analyzed_at: new Date().toISOString(),
@@ -118,8 +119,8 @@ export async function POST(request: Request) {
     return NextResponse.json({
       success: true,
       previousGrade,
-      newGrade: analysis.grade,
-      gradeChanged: previousGrade !== analysis.grade,
+      newGrade: storedGrade,
+      gradeChanged: previousGrade !== storedGrade,
     });
   } catch (err) {
     console.error("Re-analysis error:", err);
