@@ -1,26 +1,251 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@plugin "@tailwindcss/typography";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* FinePrint risk-level tokens */
+  --color-risk-low: var(--risk-low);
+  --color-risk-low-foreground: var(--risk-low-foreground);
+  --color-risk-low-bg: var(--risk-low-bg);
+  --color-risk-medium: var(--risk-medium);
+  --color-risk-medium-foreground: var(--risk-medium-foreground);
+  --color-risk-medium-bg: var(--risk-medium-bg);
+  --color-risk-high: var(--risk-high);
+  --color-risk-high-foreground: var(--risk-high-foreground);
+  --color-risk-high-bg: var(--risk-high-bg);
+
+  /* FinePrint grade tokens */
+  --color-grade-a: var(--grade-a);
+  --color-grade-b: var(--grade-b);
+  --color-grade-c: var(--grade-c);
+  --color-grade-d: var(--grade-d);
+  --color-grade-f: var(--grade-f);
+
+  /* Surface token */
+  --color-surface: var(--surface);
+  --color-surface-foreground: var(--surface-foreground);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  /* Core palette — zinc editorial + indigo trust */
+  --background: oklch(0.985 0.002 247.839);    /* zinc-50 #fafafa */
+  --foreground: oklch(0.141 0.005 285.823);     /* zinc-950 #09090b */
+  --card: oklch(1 0 0);                          /* white */
+  --card-foreground: oklch(0.141 0.005 285.823); /* zinc-950 */
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.141 0.005 285.823);
+  --primary: oklch(0.228 0.006 285.885);        /* zinc-900 #18181b */
+  --primary-foreground: oklch(0.968 0.001 286.375); /* zinc-100 */
+  --secondary: oklch(0.968 0.001 286.375);      /* zinc-100 */
+  --secondary-foreground: oklch(0.228 0.006 285.885); /* zinc-900 */
+  --muted: oklch(0.968 0.001 286.375);          /* zinc-100 */
+  --muted-foreground: oklch(0.552 0.016 285.938); /* zinc-500 */
+  --accent: oklch(0.585 0.233 277.117);         /* indigo-500 #6366f1 */
+  --accent-foreground: oklch(1 0 0);             /* white */
+  --destructive: oklch(0.577 0.245 27.325);     /* red-500 */
+  --border: oklch(0.920 0.004 286.32);          /* zinc-200 */
+  --input: oklch(0.920 0.004 286.32);           /* zinc-200 */
+  --ring: oklch(0.585 0.233 277.117);           /* indigo-500 — focus rings match accent */
+  --radius: 0.5rem;
+
+  /* Risk-level semantic tokens */
+  --risk-low: oklch(0.531 0.147 150.069);       /* emerald-600 */
+  --risk-low-foreground: oklch(0.982 0.018 155.826); /* emerald-50 */
+  --risk-low-bg: oklch(0.950 0.052 155.826);    /* emerald-100 */
+  --risk-medium: oklch(0.554 0.135 66.442);     /* amber-600 */
+  --risk-medium-foreground: oklch(0.987 0.022 95.277); /* amber-50 */
+  --risk-medium-bg: oklch(0.962 0.059 95.277);  /* amber-100 */
+  --risk-high: oklch(0.577 0.245 27.325);       /* red-500 */
+  --risk-high-foreground: oklch(0.971 0.013 17.38); /* red-50 */
+  --risk-high-bg: oklch(0.936 0.032 17.717);    /* red-100 */
+
+  /* Grade tokens */
+  --grade-a: oklch(0.596 0.145 163.225);        /* emerald-500 #10b981 */
+  --grade-b: oklch(0.627 0.119 176.218);        /* teal-500 #14b8a6 */
+  --grade-c: oklch(0.681 0.162 75.834);         /* amber-500 #f59e0b */
+  --grade-d: oklch(0.646 0.222 41.198);         /* orange-500 #f97316 */
+  --grade-f: oklch(0.577 0.245 27.325);         /* red-500 #ef4444 */
+
+  /* Surface — white with subtle border (for cards/panels) */
+  --surface: oklch(1 0 0);
+  --surface-foreground: oklch(0.228 0.006 285.885);
+}
+
+.dark {
+  --background: oklch(0.141 0.005 285.823);     /* zinc-950 */
+  --foreground: oklch(0.968 0.001 286.375);     /* zinc-100 */
+  --card: oklch(0.228 0.006 285.885);           /* zinc-900 */
+  --card-foreground: oklch(0.968 0.001 286.375);
+  --popover: oklch(0.228 0.006 285.885);
+  --popover-foreground: oklch(0.968 0.001 286.375);
+  --primary: oklch(0.968 0.001 286.375);        /* zinc-100 */
+  --primary-foreground: oklch(0.228 0.006 285.885);
+  --secondary: oklch(0.228 0.006 285.885);      /* zinc-900 */
+  --secondary-foreground: oklch(0.968 0.001 286.375);
+  --muted: oklch(0.228 0.006 285.885);
+  --muted-foreground: oklch(0.705 0.015 286.067); /* zinc-400 */
+  --accent: oklch(0.637 0.237 277.117);         /* indigo-400 */
+  --accent-foreground: oklch(0.141 0.005 285.823);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.637 0.237 277.117);
+
+  --risk-low: oklch(0.596 0.145 163.225);
+  --risk-low-foreground: oklch(0.982 0.018 155.826);
+  --risk-low-bg: oklch(0.262 0.051 152.532);
+  --risk-medium: oklch(0.613 0.174 66.293);
+  --risk-medium-foreground: oklch(0.987 0.022 95.277);
+  --risk-medium-bg: oklch(0.293 0.055 66.293);
+  --risk-high: oklch(0.704 0.191 22.216);
+  --risk-high-foreground: oklch(0.971 0.013 17.38);
+  --risk-high-bg: oklch(0.302 0.063 17.717);
+
+  --grade-a: oklch(0.596 0.145 163.225);
+  --grade-b: oklch(0.627 0.119 176.218);
+  --grade-c: oklch(0.681 0.162 75.834);
+  --grade-d: oklch(0.646 0.222 41.198);
+  --grade-f: oklch(0.704 0.191 22.216);
+
+  --surface: oklch(0.228 0.006 285.885);
+  --surface-foreground: oklch(0.968 0.001 286.375);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Print styles */
+@media print {
+  header,
+  footer,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+  }
+
+  #results-printable {
+    break-inside: avoid;
+  }
+
+  /* Print footer with site URL */
+  #results-printable::after {
+    content: "Generated by FinePrint — We read the fine print";
+    display: block;
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #ccc;
+    font-size: 9pt;
+    color: #888;
+    text-align: center;
+  }
+
+  @page {
+    margin: 1.5cm;
+  }
+
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  /* Preserve grade card and risk badge colors in print/PDF */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* Grade card circle — force background colors */
+  .bg-grade-a {
+    background-color: #10b981 !important;
+    color: white !important;
+  }
+  .bg-grade-b {
+    background-color: #14b8a6 !important;
+    color: white !important;
+  }
+  .bg-grade-c {
+    background-color: #f59e0b !important;
+    color: black !important;
+  }
+  .bg-grade-d {
+    background-color: #f97316 !important;
+    color: white !important;
+  }
+  .bg-grade-f {
+    background-color: #ef4444 !important;
+    color: white !important;
+  }
+
+  /* Risk badges */
+  .bg-risk-low {
+    background-color: #10b981 !important;
+    color: white !important;
+  }
+  .bg-risk-medium {
+    background-color: #f59e0b !important;
+    color: black !important;
+  }
+  .bg-risk-high {
+    background-color: #ef4444 !important;
+    color: white !important;
+  }
+
+  /* Risk border colors on data collection cards */
+  .border-l-risk-low {
+    border-left-color: #10b981 !important;
+  }
+  .border-l-risk-medium {
+    border-left-color: #f59e0b !important;
+  }
+  .border-l-risk-high {
+    border-left-color: #ef4444 !important;
+  }
 }
