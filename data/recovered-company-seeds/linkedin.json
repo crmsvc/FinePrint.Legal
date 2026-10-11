@@ -1,0 +1,111 @@
+{
+  "slug": "linkedin",
+  "name": "LinkedIn (Microsoft)",
+  "grade": "C+",
+  "verdict": "Your professional identity and network connections fuel Microsoft's AI and advertising, with opt-out for training buried in settings.",
+  "lastAnalyzed": "2026-03-13",
+  "sourceUrl": "https://www.linkedin.com/legal/user-agreement",
+  "analysis": {
+    "mode": "full",
+    "grade": "C+",
+    "verdict": "Your professional identity and network connections fuel Microsoft's AI and advertising, with opt-out for training buried in settings.",
+    "whatTheyCollect": [
+      {
+        "category": "Professional Profile",
+        "details": "Work history, education, skills, endorsements, certifications, and profile views — the most detailed professional dossier online.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "category": "Network & Connections",
+        "details": "Your entire professional network, connection requests, messages, and InMail interactions.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "category": "Content & Engagement",
+        "details": "Posts, articles, comments, reactions, shares, and detailed engagement metrics on all content.",
+        "mandatory": true,
+        "riskLevel": "LOW"
+      },
+      {
+        "category": "Job Search Activity",
+        "details": "Every job search, application, saved job, salary research, and recruiter interaction is logged.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Contact Sync & Email",
+        "details": "If synced, your email contacts and calendar data. LinkedIn also scans email headers for connections.",
+        "mandatory": false,
+        "riskLevel": "HIGH"
+      }
+    ],
+    "whatTheyDoWithData": [
+      {
+        "practice": "AI Training for Microsoft Products",
+        "details": "LinkedIn data is used to train generative AI features across LinkedIn and Microsoft 365 Copilot. Opt-out is available but was enabled by default.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Recruiter & Sales Tools",
+        "details": "Your profile data powers LinkedIn Recruiter, Sales Navigator, and Marketing Solutions — paid products where your information is the product.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Targeted Advertising",
+        "details": "Professional data enables uniquely precise B2B advertising — targeting by job title, company size, seniority, and industry.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "practice": "Microsoft Ecosystem Integration",
+        "details": "LinkedIn data flows into the broader Microsoft ecosystem including Bing, Outlook, and Microsoft 365.",
+        "riskLevel": "MEDIUM"
+      }
+    ],
+    "rightsYouGiveUp": [
+      {
+        "title": "Content License",
+        "originalText": "You grant LinkedIn a nonexclusive, irrevocable, worldwide, transferable, and sublicensable license to use, copy, modify, distribute, publish, and process information and content that you provide through our Services.",
+        "translation": "LinkedIn can use your posts and profile content however they want, including for AI training and commercial products. 'Irrevocable' means you can't take it back.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "title": "Professional Data Monetization",
+        "originalText": "We use your data to suggest connections, content, and provide our premium services.",
+        "translation": "Your career data is the product sold to recruiters and sales professionals. You're not LinkedIn's customer — you're their inventory.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "title": "Cross-Platform Data Sharing",
+        "originalText": "We may share your data with our affiliates, including Microsoft.",
+        "translation": "LinkedIn data feeds into Microsoft's broader AI and advertising operations. What you share professionally may surface in unexpected contexts.",
+        "riskLevel": "MEDIUM"
+      }
+    ],
+    "howToLeave": {
+      "canDelete": "Yes — account closure available but LinkedIn retains some data for legal and operational purposes.",
+      "dataRetention": "Profile data removed from public view quickly, but backend retention continues for an unspecified period.",
+      "dataPortability": "Download Your Data feature available. Provides connections, messages, and profile data in CSV format.",
+      "overallDifficulty": "MEDIUM"
+    },
+    "redFlags": [
+      {
+        "clause": "AI training enabled by default",
+        "whyItMatters": "LinkedIn silently opted users into AI training for generative features. The toggle was buried in Settings > Data Privacy > Generative AI, and most users never saw the change.",
+        "industryComparison": "Similar to X's Grok opt-in controversy. LinkedIn faced regulatory pushback in the EU where the feature was paused."
+      },
+      {
+        "clause": "Job search activity visible to current employer",
+        "whyItMatters": "Despite 'Open to Work' privacy settings, recruiters from your current company may still infer job-seeking behavior from profile changes and activity patterns.",
+        "industryComparison": "No other job platform has this conflict of interest — Indeed and Glassdoor don't share employer and employee data from the same platform."
+      },
+      {
+        "clause": "Your profile powers paid products you don't benefit from",
+        "whyItMatters": "LinkedIn Recruiter costs $8,000+/year and Sales Navigator $1,200+/year. Your data is the core product, but you're not compensated for being searchable inventory.",
+        "industryComparison": "Facebook similarly monetizes user data, but LinkedIn's paid products make the value extraction more direct and quantifiable."
+      }
+    ],
+    "bottomLine": "LinkedIn monetizes your professional identity through premium tools, advertising, and now AI training. The irrevocable content license and default AI opt-in are concerning. For most professionals, LinkedIn is unavoidable, but you should minimize data sharing: disable AI training in settings, be selective about contact syncing, and understand that your profile data is actively generating revenue for Microsoft."
+  }
+}

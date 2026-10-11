@@ -1,0 +1,116 @@
+{
+  "slug": "x-twitter",
+  "name": "X (Twitter)",
+  "grade": "D+",
+  "verdict": "Aggressive data harvesting for AI training with minimal transparency and a deteriorating privacy posture.",
+  "lastAnalyzed": "2026-03-13",
+  "sourceUrl": "https://x.com/en/tos",
+  "analysis": {
+    "mode": "full",
+    "grade": "D+",
+    "verdict": "Aggressive data harvesting for AI training with minimal transparency and a deteriorating privacy posture.",
+    "whatTheyCollect": [
+      {
+        "category": "Posts & Interactions",
+        "details": "Every post, reply, like, bookmark, DM, space conversation, and list interaction is collected and stored.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Contact & Address Book",
+        "details": "If you sync contacts, X stores your entire phone address book including people who don't have X accounts.",
+        "mandatory": false,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Device & Location Data",
+        "details": "IP address, device identifiers, precise GPS (if enabled), inferred location from IP and activity patterns.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Browsing Activity",
+        "details": "Websites you visit that have X buttons or embeds report your activity back. X also tracks links you click within the platform.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Biometric Data",
+        "details": "Government ID uploads for verification, plus potential biometric data from photos and videos for identity matching.",
+        "mandatory": false,
+        "riskLevel": "HIGH"
+      }
+    ],
+    "whatTheyDoWithData": [
+      {
+        "practice": "Grok AI Training",
+        "details": "Public posts are used to train xAI's Grok language model. Users were opted in by default with the toggle buried in settings.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Targeted Advertising",
+        "details": "Behavioral data powers ad targeting across X and partner ad networks.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Data Licensing",
+        "details": "X sells access to public post data to researchers, businesses, and AI companies through its API at premium prices.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Third-Party Sharing",
+        "details": "Data shared with business partners, advertisers, and affiliated companies including those in the xAI ecosystem.",
+        "riskLevel": "HIGH"
+      }
+    ],
+    "rightsYouGiveUp": [
+      {
+        "title": "Broad Content License",
+        "originalText": "You grant us a worldwide, non-exclusive, royalty-free license to use, copy, reproduce, process, adapt, modify, publish, transmit, display, upload, and distribute your Content in any and all media or distribution methods now known or later developed.",
+        "translation": "X can do anything with your posts, including licensing them to AI companies. 'Methods now known or later developed' is an open-ended blank check.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "title": "AI Training Consent",
+        "originalText": "You agree that this license includes the right for us to make your Content available to other companies, organizations, or individuals for the syndication, broadcast, distribution, or publication of such Content.",
+        "translation": "Your tweets feed Grok and potentially any company X partners with. You were opted into this without being asked.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "title": "Dispute Resolution via Arbitration",
+        "originalText": "You agree that disputes between you and us will be resolved by binding, individual arbitration.",
+        "translation": "No class actions, no jury trials. If X mishandles your data at scale, each affected person must fight alone.",
+        "riskLevel": "HIGH"
+      }
+    ],
+    "howToLeave": {
+      "canDelete": "Yes — account deactivation starts immediately but full deletion takes 30 days. Reactivation possible within that window.",
+      "dataRetention": "Some data retained beyond deletion for legal compliance, safety, and 'legitimate business purposes' — vaguely defined.",
+      "dataPortability": "Download Your Data feature available in Settings. Limited compared to Google Takeout.",
+      "overallDifficulty": "MEDIUM"
+    },
+    "redFlags": [
+      {
+        "clause": "Grok AI training opt-in by default",
+        "whyItMatters": "X silently enabled sharing your posts with Grok for AI training. Most users never knew the setting existed, and it was only accessible on web — not mobile — when first rolled out.",
+        "industryComparison": "Meta and Google have similar AI training policies but were more transparent about the rollout. X's stealth approach drew regulatory scrutiny in the EU."
+      },
+      {
+        "clause": "Selling public data access at premium API prices",
+        "whyItMatters": "X monetizes your content by selling API access to companies and AI trainers. Researchers who previously had free access now pay thousands per month.",
+        "industryComparison": "Reddit made a similar controversial move. Most social platforms allow some API access but X's pricing and approach have been the most aggressive."
+      },
+      {
+        "clause": "Contact syncing collects non-user data",
+        "whyItMatters": "When you share your contacts, X builds profiles on people who never agreed to use the platform. This 'shadow profiling' raises serious consent issues.",
+        "industryComparison": "Facebook faced major backlash for identical practices. X continues the practice with less scrutiny."
+      },
+      {
+        "clause": "Deteriorating privacy governance",
+        "whyItMatters": "Since the ownership change, X has reduced its trust & safety team, left the EU Code of Practice on Disinformation, and faced multiple regulatory actions.",
+        "industryComparison": "X is the only major platform to voluntarily withdraw from industry self-regulation frameworks."
+      }
+    ],
+    "bottomLine": "X's privacy posture has significantly worsened. Your posts train Grok AI by default, your data is sold via premium API access, and privacy governance has been dismantled. The broad content license combined with AI training makes every post potential training data. If you use X, immediately check Settings > Privacy > Grok and disable data sharing, and be aware that anything you post publicly is being monetized."
+  }
+}

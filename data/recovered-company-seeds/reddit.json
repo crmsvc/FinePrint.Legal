@@ -1,0 +1,111 @@
+{
+  "slug": "reddit",
+  "name": "Reddit",
+  "grade": "C",
+  "verdict": "Your posts are training AI models via paid data licensing deals, and pseudonymous accounts are less private than you think.",
+  "lastAnalyzed": "2026-03-13",
+  "sourceUrl": "https://www.redditinc.com/policies/user-agreement",
+  "analysis": {
+    "mode": "full",
+    "grade": "C",
+    "verdict": "Your posts are training AI models via paid data licensing deals, and pseudonymous accounts are less private than you think.",
+    "whatTheyCollect": [
+      {
+        "category": "Posts & Interactions",
+        "details": "All posts, comments, votes, saves, awards, and subreddit subscriptions. Deleted posts may persist in backups and third-party archives.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "category": "Account & Identity",
+        "details": "Email, phone number (if provided), IP addresses. Despite pseudonymous usernames, Reddit can identify you through these identifiers.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "category": "Device & Browsing Data",
+        "details": "Browser type, device ID, IP address, cookies, and referral URLs. Reddit tracks which links bring you to the platform.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "category": "Advertising Identifiers",
+        "details": "Mobile advertising IDs, cookie-based identifiers for ad targeting, and data from Reddit's pixel tracking on third-party sites.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Connected Accounts",
+        "details": "If you sign in via Google or Apple, Reddit receives basic profile data from those services.",
+        "mandatory": false,
+        "riskLevel": "LOW"
+      }
+    ],
+    "whatTheyDoWithData": [
+      {
+        "practice": "AI Data Licensing",
+        "details": "Reddit signed a $60M/year deal with Google to license user-generated content for AI training. Your posts may train Gemini and other models.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Targeted Advertising",
+        "details": "Reddit builds interest profiles from your subreddit activity, post history, and engagement patterns for ad targeting.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Third-Party Sharing",
+        "details": "Data shared with analytics providers, ad partners, and content licensing partners.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "practice": "Contextual Profiling",
+        "details": "Subreddit subscriptions reveal sensitive information — health conditions, political views, financial situations — used for ad targeting.",
+        "riskLevel": "HIGH"
+      }
+    ],
+    "rightsYouGiveUp": [
+      {
+        "title": "Perpetual Content License",
+        "originalText": "When Your Content is created with or submitted to the Services, you grant us a worldwide, royalty-free, perpetual, irrevocable, non-exclusive, transferable, and sublicensable license to use, copy, modify, adapt, prepare derivative works of, distribute, store, perform, and display Your Content.",
+        "translation": "Reddit owns a permanent license to your posts even after you delete them. The word 'perpetual' and 'irrevocable' means this never expires and can't be revoked.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "title": "Commercial Use Rights",
+        "originalText": "This license includes the right to make Your Content available for syndication, broadcast, distribution, or publication by other companies.",
+        "translation": "This is the clause that enables AI data deals. Your posts can be sold to Google, OpenAI, or anyone else Reddit strikes a deal with.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "title": "Binding Arbitration",
+        "originalText": "You agree to resolve any disputes with Reddit through final and binding individual arbitration.",
+        "translation": "Standard class action waiver. If Reddit's data licensing harms millions of users, each must arbitrate individually.",
+        "riskLevel": "MEDIUM"
+      }
+    ],
+    "howToLeave": {
+      "canDelete": "Yes — account deletion is available. Posts remain visible but are disassociated from your username (shown as [deleted]).",
+      "dataRetention": "Posts persist publicly even after account deletion. Reddit retains some data for legal compliance and fraud prevention.",
+      "dataPortability": "Data request feature available in Settings. Limited export compared to larger platforms.",
+      "overallDifficulty": "MEDIUM"
+    },
+    "redFlags": [
+      {
+        "clause": "Perpetual, irrevocable content license",
+        "whyItMatters": "Unlike most platforms where the license ends when you delete content, Reddit's license is forever. Your deleted posts can still be used commercially.",
+        "industryComparison": "Facebook and Instagram licenses end when you delete content. Reddit's perpetual license is more aggressive than most social platforms."
+      },
+      {
+        "clause": "$60M+ AI data licensing deals",
+        "whyItMatters": "Reddit is actively monetizing user-generated content by selling it to AI companies. Users who contributed content for years received no compensation or meaningful opt-out.",
+        "industryComparison": "X/Twitter similarly monetizes data via API, but Reddit's explicit licensing deals with named AI companies (Google) set a precedent."
+      },
+      {
+        "clause": "Pseudonymity doesn't mean anonymity",
+        "whyItMatters": "Reddit collects enough identifiers (IP, device, email) to connect 'anonymous' posts to real identities. Subreddit activity can reveal deeply personal information.",
+        "industryComparison": "4chan offers more anonymity. Reddit's pseudonymity gives a false sense of privacy that its data collection undermines."
+      }
+    ],
+    "bottomLine": "Reddit's community-driven model obscures the fact that your contributions are commercial assets. The perpetual content license and AI data deals mean your posts may train AI models indefinitely. The pseudonymous nature of Reddit makes users more candid, but the data collection behind the curtain is substantial. If you post on Reddit, assume it's permanent and commercially exploitable — even after deletion."
+  }
+}

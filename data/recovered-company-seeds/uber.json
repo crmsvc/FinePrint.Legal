@@ -1,0 +1,111 @@
+{
+  "slug": "uber",
+  "name": "Uber",
+  "grade": "C-",
+  "verdict": "Tracks every trip with precise location data, shares with insurers and advertisers, and retains data long after you stop riding.",
+  "lastAnalyzed": "2026-03-13",
+  "sourceUrl": "https://www.uber.com/legal/en/document/?name=general-terms-of-use",
+  "analysis": {
+    "mode": "full",
+    "grade": "C-",
+    "verdict": "Tracks every trip with precise location data, shares with insurers and advertisers, and retains data long after you stop riding.",
+    "whatTheyCollect": [
+      {
+        "category": "Location Data",
+        "details": "Precise GPS location before, during, and after rides. Background location collection even when the app isn't in use if permissions are granted.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Trip & Transaction History",
+        "details": "Complete history of every ride, Uber Eats order, payment, tip, rating, and route taken.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "category": "Device & Sensor Data",
+        "details": "Accelerometer, gyroscope, and GPS data used to detect driving behavior. Battery level, mobile carrier, and connection type.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "category": "Contact Information",
+        "details": "Phone number, email, saved addresses (home, work), and emergency contacts.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "category": "Identity Verification",
+        "details": "Government ID, selfie photos for identity matching, and in some markets, facial recognition data.",
+        "mandatory": false,
+        "riskLevel": "HIGH"
+      }
+    ],
+    "whatTheyDoWithData": [
+      {
+        "practice": "Insurance & Safety Profiling",
+        "details": "Trip data shared with insurance companies and used to assess risk profiles. Driving behavior data from sensor readings informs safety scores.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Advertising & Marketing",
+        "details": "Location and trip data used for targeted advertising. Uber's advertising division uses rider behavior to sell ads to restaurants and retailers.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Dynamic Pricing",
+        "details": "Your location, trip history, and demand patterns feed surge pricing algorithms that determine what you pay.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "practice": "Third-Party Data Sharing",
+        "details": "Data shared with restaurant partners (Eats), payment processors, mapping providers, and city transportation authorities.",
+        "riskLevel": "MEDIUM"
+      }
+    ],
+    "rightsYouGiveUp": [
+      {
+        "title": "Binding Arbitration",
+        "originalText": "You agree that disputes arising out of or relating to this Agreement will be resolved by binding, individual arbitration.",
+        "translation": "No class action lawsuits. Given Uber's history of widespread issues (surge pricing, driver classification, data breaches), this clause shields them from collective accountability.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "title": "Location Data Consent",
+        "originalText": "You consent to our collection, use, and sharing of your location data for the purposes described in our Privacy Notice.",
+        "translation": "Using Uber means accepting continuous location tracking. The tracking extends beyond active rides and feeds advertising and insurance data.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "title": "Liability Limitation",
+        "originalText": "In no event shall Uber's total liability to you exceed the amounts paid by you to Uber during the 6 months prior to the event giving rise to the claim.",
+        "translation": "Uber's maximum financial responsibility to you is capped at what you've spent in the last 6 months, regardless of the severity of the incident.",
+        "riskLevel": "MEDIUM"
+      }
+    ],
+    "howToLeave": {
+      "canDelete": "Yes — account deletion available through the app. Process can take up to 30 days.",
+      "dataRetention": "Uber retains trip records, financial data, and safety incident data for up to 7 years for legal and regulatory compliance.",
+      "dataPortability": "Privacy Settings allows you to download your data. Includes trip history and account information.",
+      "overallDifficulty": "MEDIUM"
+    },
+    "redFlags": [
+      {
+        "clause": "Background location collection",
+        "whyItMatters": "Uber has been caught collecting location data even when the app is closed. A 2017 FTC settlement addressed deceptive location tracking practices.",
+        "industryComparison": "Lyft collects location only during and shortly after trips. Uber's persistent tracking is more aggressive than its direct competitor."
+      },
+      {
+        "clause": "7-year data retention",
+        "whyItMatters": "Even after deleting your account, Uber keeps trip data for up to 7 years. That's 7 years of location history, payment records, and behavioral data.",
+        "industryComparison": "Most ride-sharing alternatives retain data for 1-3 years. Uber's 7-year retention is among the longest in the industry."
+      },
+      {
+        "clause": "Data shared with insurance companies",
+        "whyItMatters": "Your ride history and sensor data may influence insurance risk assessments. Frequent late-night rides or trips to certain locations could theoretically affect premiums.",
+        "industryComparison": "Most consumer apps don't share behavioral data with insurers. Uber's insurance partnerships create a direct financial impact on users."
+      }
+    ],
+    "bottomLine": "Uber knows where you go, when, how often, and shares that with advertisers and insurers. The 7-year data retention means your ride history persists long after you stop using the service. Background location tracking and sensor data collection go beyond what's needed for ride-hailing. If you use Uber, minimize location permissions (only 'While Using'), regularly delete trip history, and understand that your mobility data has significant commercial value."
+  }
+}

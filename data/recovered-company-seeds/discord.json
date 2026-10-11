@@ -1,0 +1,111 @@
+{
+  "slug": "discord",
+  "name": "Discord",
+  "grade": "C+",
+  "verdict": "Better than most social platforms on privacy, but growing ad ambitions and broad content rights warrant attention.",
+  "lastAnalyzed": "2026-03-13",
+  "sourceUrl": "https://discord.com/terms",
+  "analysis": {
+    "mode": "full",
+    "grade": "C+",
+    "verdict": "Better than most social platforms on privacy, but growing ad ambitions and broad content rights warrant attention.",
+    "whatTheyCollect": [
+      {
+        "category": "Messages & Content",
+        "details": "All messages, voice/video call metadata, file uploads, and reactions. Messages are stored on Discord's servers, not end-to-end encrypted.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Activity & Usage",
+        "details": "Which servers you join, channels you visit, games you play, Spotify listening activity, and online/idle/DND status.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "category": "Device Information",
+        "details": "IP address, device identifiers, OS, browser type, and referring URLs.",
+        "mandatory": true,
+        "riskLevel": "LOW"
+      },
+      {
+        "category": "Payment Data",
+        "details": "For Nitro subscribers: billing address, payment method details processed via third-party payment processors.",
+        "mandatory": false,
+        "riskLevel": "LOW"
+      },
+      {
+        "category": "Age & Identity",
+        "details": "Date of birth, and in some regions, government ID for age verification required to access age-gated content.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      }
+    ],
+    "whatTheyDoWithData": [
+      {
+        "practice": "Service Operation",
+        "details": "Messages stored to deliver them across devices. Unlike some platforms, Discord has historically not sold message data for advertising.",
+        "riskLevel": "LOW"
+      },
+      {
+        "practice": "Emerging Ad Platform",
+        "details": "Discord introduced Sponsored Quests and is building an ad platform. User engagement data will increasingly drive ad targeting.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "practice": "Safety & Moderation",
+        "details": "Content is scanned for child safety violations, spam, and terms violations. Reports trigger human review of messages.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "practice": "Analytics & Improvement",
+        "details": "Usage patterns analyzed to improve features, including which server features are used most and engagement metrics.",
+        "riskLevel": "LOW"
+      }
+    ],
+    "rightsYouGiveUp": [
+      {
+        "title": "Content License",
+        "originalText": "By uploading, distributing, transmitting or otherwise using Your Content with the services, you grant to us a nonexclusive, transferable, royalty-free, sublicensable, and worldwide license to use, store, display, reproduce, save, modify, create derivative works, perform, and distribute Your Content.",
+        "translation": "Standard broad license. Discord can use your messages, images, and uploads for service operation and potentially more. Transferable and sublicensable means third parties could access it.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "title": "Binding Arbitration",
+        "originalText": "You and Discord agree that any dispute, claim, or controversy will be settled by binding arbitration.",
+        "translation": "No class actions or jury trials. Standard tech company arbitration clause.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "title": "Terms Modification",
+        "originalText": "We may update these terms. We'll notify you of material changes.",
+        "translation": "Discord can change terms with notice. They do provide notification but continued use equals acceptance.",
+        "riskLevel": "LOW"
+      }
+    ],
+    "howToLeave": {
+      "canDelete": "Yes — account deletion available through Settings. Data is queued for deletion within 14-30 days.",
+      "dataRetention": "Messages in servers persist after account deletion (shown as 'Deleted User'). DMs are deleted.",
+      "dataPortability": "Request Your Data feature available. Returns account info, messages, and activity data.",
+      "overallDifficulty": "LOW"
+    },
+    "redFlags": [
+      {
+        "clause": "No end-to-end encryption for messages",
+        "whyItMatters": "All messages are readable by Discord in plaintext. This means staff, moderators with access, or law enforcement with a subpoena can read everything.",
+        "industryComparison": "Signal and WhatsApp offer E2E encryption by default. Telegram offers it optionally. Discord's lack of encryption is a notable gap for a messaging platform."
+      },
+      {
+        "clause": "Growing advertising ambitions",
+        "whyItMatters": "Discord's shift toward ads (Sponsored Quests, in-app promotions) signals that user engagement data will increasingly be monetized.",
+        "industryComparison": "Discord is following the path that Facebook and Instagram took — starting ad-free, then gradually introducing advertising as the primary revenue model."
+      },
+      {
+        "clause": "Server messages survive account deletion",
+        "whyItMatters": "Even after deleting your account, messages you sent in servers remain visible (attributed to 'Deleted User'). Years of conversations persist without your control.",
+        "industryComparison": "Most messaging platforms delete messages when accounts are deleted. Discord's approach is more like a forum where posts outlive the poster."
+      }
+    ],
+    "bottomLine": "Discord is currently better than average on privacy — no message-based ad targeting yet, decent deletion timeline, and transparent about data use. But the trajectory is concerning: no encryption, growing ad platform, and server messages that outlive your account. If you use Discord for sensitive conversations, know that nothing is encrypted and everything persists. The platform is mid-transition from privacy-respectable to ad-supported."
+  }
+}

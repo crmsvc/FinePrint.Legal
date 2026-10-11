@@ -1,0 +1,111 @@
+{
+  "slug": "amazon",
+  "name": "Amazon",
+  "grade": "C-",
+  "verdict": "Vast data collection across shopping, Alexa, streaming, and smart home — all feeding a unified advertising machine.",
+  "lastAnalyzed": "2026-03-13",
+  "sourceUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=508088",
+  "analysis": {
+    "mode": "full",
+    "grade": "C-",
+    "verdict": "Vast data collection across shopping, Alexa, streaming, and smart home — all feeding a unified advertising machine.",
+    "whatTheyCollect": [
+      {
+        "category": "Purchase & Browsing History",
+        "details": "Every search, click, purchase, wishlist addition, price alert, and product review across all Amazon properties.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Voice Recordings",
+        "details": "Alexa records and stores voice commands. Human reviewers may listen to recordings for quality improvement.",
+        "mandatory": false,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Smart Home Data",
+        "details": "Ring doorbell footage, smart lock activity, thermostat patterns, and other IoT device data flows to Amazon.",
+        "mandatory": false,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Streaming Behavior",
+        "details": "Everything you watch on Prime Video, listen to on Amazon Music, and read on Kindle — including reading speed and highlights.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "category": "Financial Information",
+        "details": "Payment methods, billing addresses, credit history for Amazon credit cards, and purchasing patterns.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      }
+    ],
+    "whatTheyDoWithData": [
+      {
+        "practice": "Personalized Advertising",
+        "details": "Amazon's ad network uses your shopping and browsing data to target ads across Amazon properties and third-party sites.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Product Recommendations",
+        "details": "Your entire behavioral history drives recommendations designed to maximize purchases.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "practice": "Third-Party Seller Insights",
+        "details": "Aggregated purchase data is shared with marketplace sellers and has been used to develop competing Amazon-brand products.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Alexa Voice Processing",
+        "details": "Voice recordings are processed by AI and sometimes reviewed by humans to improve speech recognition accuracy.",
+        "riskLevel": "HIGH"
+      }
+    ],
+    "rightsYouGiveUp": [
+      {
+        "title": "Content License",
+        "originalText": "You grant Amazon a nonexclusive, royalty-free, perpetual, irrevocable right to use, reproduce, modify, and distribute any content you submit.",
+        "translation": "Product reviews, Q&A answers, photos — Amazon can use them forever, even after you delete your account.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "title": "Binding Arbitration",
+        "originalText": "Any dispute or claim relating in any way to your use of any Amazon Service will be resolved by binding arbitration rather than in court.",
+        "translation": "You can't sue Amazon in court or join a class action. Disputes go to a private arbitrator where Amazon has a structural advantage.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "title": "Unilateral Terms Changes",
+        "originalText": "We reserve the right to make changes to our site, policies, and these Conditions of Use at any time.",
+        "translation": "Amazon can change any rule at any time without your explicit consent. Continued use equals agreement.",
+        "riskLevel": "MEDIUM"
+      }
+    ],
+    "howToLeave": {
+      "canDelete": "Yes — account closure is available, but it affects all linked Amazon services (Kindle, Audible, Prime, AWS if linked).",
+      "dataRetention": "Amazon retains purchase records, financial data, and some behavioral data for legal and business purposes even after closure.",
+      "dataPortability": "Request Your Information tool available. Data export can take days to process.",
+      "overallDifficulty": "HIGH"
+    },
+    "redFlags": [
+      {
+        "clause": "Alexa voice recordings reviewed by humans",
+        "whyItMatters": "Conversations in your home can be listened to by Amazon contractors. This includes accidental activations that may capture private moments.",
+        "industryComparison": "Google and Apple have similar review programs but Apple has been more aggressive about on-device processing to limit cloud storage."
+      },
+      {
+        "clause": "Binding arbitration with class action waiver",
+        "whyItMatters": "If Amazon causes widespread harm to customers, each person must fight individually through arbitration — a system that statistically favors corporations.",
+        "industryComparison": "Common among big tech, but Amazon's scope (shopping, smart home, healthcare) makes the waiver especially broad."
+      },
+      {
+        "clause": "Cross-ecosystem data aggregation",
+        "whyItMatters": "Amazon knows what you buy, what you watch, what you say to Alexa, who comes to your door (Ring), and your health data (One Medical/Amazon Pharmacy). No other company has this breadth.",
+        "industryComparison": "Google and Apple have broad ecosystems but Amazon's combination of commerce + smart home + healthcare data is uniquely comprehensive."
+      }
+    ],
+    "bottomLine": "Amazon's terms cover an empire spanning retail, voice assistants, smart home devices, streaming, healthcare, and cloud services. The sheer breadth of data collection is staggering — from your Kindle highlights to your Ring doorbell footage. Binding arbitration means you can't take collective legal action. If you use Amazon services, understand that you're feeding one of the most detailed consumer profiles in existence."
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "google",
+  "name": "Google",
+  "grade": "C",
+  "verdict": "The most comprehensive data profile in tech, spanning search, email, location, and the entire advertising web.",
+  "lastAnalyzed": "2026-03-13",
+  "sourceUrl": "https://policies.google.com/terms",
+  "analysis": {
+    "mode": "full",
+    "grade": "C",
+    "verdict": "The most comprehensive data profile in tech, spanning search, email, location, and the entire advertising web.",
+    "whatTheyCollect": [
+      {
+        "category": "Search & Browsing History",
+        "details": "Every Google Search query, Chrome browsing history, YouTube watch history, and Google Maps search.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Location Data",
+        "details": "Precise GPS location from Android devices, Google Maps timeline, Wi-Fi and cell tower triangulation, even with location services 'paused.'",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Email & Document Content",
+        "details": "Gmail messages (no longer scanned for ads but still processed), Google Drive files, Google Docs, Sheets, and Slides content.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Voice & Audio",
+        "details": "Google Assistant voice commands, YouTube voice searches, and audio recordings stored in your activity history.",
+        "mandatory": false,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Cross-Service Activity",
+        "details": "Activity across 270+ Google products is unified — Search, YouTube, Maps, Gmail, Chrome, Android, Play Store, Photos, Fit, and more.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      }
+    ],
+    "whatTheyDoWithData": [
+      {
+        "practice": "Advertising Profile",
+        "details": "Google runs the world's largest ad network. Your data determines which ads you see across millions of websites and apps.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "AI & Model Training",
+        "details": "Public content and certain user data is used to train Gemini and other AI models.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "practice": "Service Personalization",
+        "details": "All Google products are personalized based on your unified profile — search results, YouTube recommendations, Maps suggestions.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "practice": "Third-Party Ad Network",
+        "details": "Your behavioral data powers ads not just on Google but on millions of third-party sites running Google Ads, AdSense, and Analytics.",
+        "riskLevel": "HIGH"
+      }
+    ],
+    "rightsYouGiveUp": [
+      {
+        "title": "Content License",
+        "originalText": "When you upload, submit, store, send, or receive content to or through our Services, you give Google a worldwide license to use, host, store, reproduce, modify, create derivative works, communicate, publish, publicly perform, publicly display, and distribute such content.",
+        "translation": "Google gets broad rights to anything you store in their services — Docs, Photos, Drive. The license is needed for service functionality but the scope is massive.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "title": "Data Across All Services",
+        "originalText": "We combine the information we collect among our services and across your devices for the purposes described above.",
+        "translation": "Your Gmail contacts, YouTube history, location timeline, and search queries are all merged into one profile. There's no keeping services separate.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "title": "Terms Changes Without Notice",
+        "originalText": "If we materially change these terms, we'll provide you with reasonable advance notice and the opportunity to review the changes.",
+        "translation": "Google does promise notice for material changes — better than most — but 'reasonable' notice is subjective and continued use means acceptance.",
+        "riskLevel": "LOW"
+      }
+    ],
+    "howToLeave": {
+      "canDelete": "Yes — Google Account deletion is straightforward. Individual service data (e.g., YouTube only) can be deleted separately.",
+      "dataRetention": "Most data deleted within 2 months plus up to 6 months for backup systems. Some data retained for legal compliance.",
+      "dataPortability": "Google Takeout provides comprehensive data export across all services. One of the best export tools in the industry.",
+      "overallDifficulty": "MEDIUM"
+    },
+    "redFlags": [
+      {
+        "clause": "Location tracking persists even when 'paused'",
+        "whyItMatters": "An AP investigation found Google tracks location data even when users turn off Location History. The setting name was misleading.",
+        "industryComparison": "Google settled for $391.5 million over this practice. Apple's location tracking is more limited and transparent."
+      },
+      {
+        "clause": "270+ services feeding one profile",
+        "whyItMatters": "No other company has this breadth of data sources. Your search history, email, location, video viewing, and app usage all combine into one advertising profile.",
+        "industryComparison": "Meta is comparable in social data but Google's search + email + location + Android combination is unmatched."
+      },
+      {
+        "clause": "Ad network extends tracking beyond Google properties",
+        "whyItMatters": "Google's ad tech runs on millions of websites. Even if you avoid Google products, sites you visit likely send your data to Google via Analytics, Ads, or reCAPTCHA.",
+        "industryComparison": "Meta Pixel is the closest competitor but Google's tracking infrastructure reaches significantly more of the web."
+      }
+    ],
+    "bottomLine": "Google's terms govern the most extensive data collection operation in tech history. The breadth is unmatched — search, email, location, video, mobile OS, smart home, and the web's dominant ad network. To their credit, Google offers better transparency tools (My Activity, Takeout) and data deletion than most competitors. But the fundamental model is using your life's data to sell ads. Use privacy controls aggressively: auto-delete activity, pause tracking, and review your Ad Settings regularly."
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "chatgpt",
+  "name": "ChatGPT (OpenAI)",
+  "grade": "C+",
+  "verdict": "Trains AI on your conversations by default with limited opt-out transparency.",
+  "lastAnalyzed": "2026-03-13",
+  "sourceUrl": "https://openai.com/policies/terms-of-use",
+  "analysis": {
+    "mode": "full",
+    "grade": "C+",
+    "verdict": "Trains AI on your conversations by default with limited opt-out transparency.",
+    "whatTheyCollect": [
+      {
+        "category": "Conversation Content",
+        "details": "All prompts, inputs, file uploads, and generated outputs are collected and stored.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Account Information",
+        "details": "Name, email, phone number, payment details for Plus/Team subscribers.",
+        "mandatory": true,
+        "riskLevel": "LOW"
+      },
+      {
+        "category": "Usage & Device Data",
+        "details": "IP address, browser type, device identifiers, interaction patterns, and session duration.",
+        "mandatory": true,
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "category": "Connected Services",
+        "details": "Data from third-party plugins, integrations, and browsing activity when web search is enabled.",
+        "mandatory": false,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Feedback & Annotations",
+        "details": "Thumbs up/down ratings, flagged content, and any corrections you provide are stored and used for training.",
+        "mandatory": false,
+        "riskLevel": "MEDIUM"
+      }
+    ],
+    "whatTheyDoWithData": [
+      {
+        "practice": "AI Model Training",
+        "details": "Your conversations are used to train and improve AI models unless you explicitly opt out via settings.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Service Improvement",
+        "details": "Data is analyzed to improve safety, fix bugs, and develop new features across all OpenAI products.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "practice": "Human Review",
+        "details": "OpenAI employees and contractors may review your conversations for safety and quality purposes.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Third-Party Sharing",
+        "details": "Data may be shared with service providers, affiliates, and in response to legal requests.",
+        "riskLevel": "MEDIUM"
+      }
+    ],
+    "rightsYouGiveUp": [
+      {
+        "title": "Training License",
+        "originalText": "You agree that we may use Content to develop and improve our Services.",
+        "translation": "Everything you type can be fed into future AI models — your creative writing, business ideas, personal thoughts. Opting out is possible but buried in settings.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "title": "No Guarantee of Output Accuracy",
+        "originalText": "Due to the nature of our Services, output may not be unique and other users may receive similar output.",
+        "translation": "They take zero responsibility for wrong answers. If you rely on ChatGPT for anything important and it hallucinates, that's on you.",
+        "riskLevel": "MEDIUM"
+      },
+      {
+        "title": "Broad Terms Modification",
+        "originalText": "We may update these Terms from time to time. Continued use constitutes acceptance.",
+        "translation": "They can change the rules whenever they want. Continuing to use the service counts as agreeing to whatever new terms they set.",
+        "riskLevel": "MEDIUM"
+      }
+    ],
+    "howToLeave": {
+      "canDelete": "Yes — account deletion is available through Settings, but previously submitted training data may persist in models.",
+      "dataRetention": "Conversation history can be deleted, but data already used for training cannot be extracted from models.",
+      "dataPortability": "You can export your data via Settings > Data Controls > Export.",
+      "overallDifficulty": "MEDIUM"
+    },
+    "redFlags": [
+      {
+        "clause": "Conversations used for AI training by default",
+        "whyItMatters": "Most users don't realize their private conversations become training data. The opt-out exists but requires navigating to a specific settings page.",
+        "industryComparison": "Google Gemini and Anthropic Claude offer similar opt-outs, but ChatGPT's scale means more data is collected by default."
+      },
+      {
+        "clause": "Human reviewers can read your conversations",
+        "whyItMatters": "Even conversations you consider private may be read by OpenAI staff for safety review. There's no way to flag specific conversations as off-limits.",
+        "industryComparison": "Most AI companies do this, but few are as transparent about it. The lack of granular control is concerning."
+      },
+      {
+        "clause": "No liability for inaccurate outputs",
+        "whyItMatters": "If you use ChatGPT to draft a contract, medical advice, or code and it's wrong, OpenAI accepts no responsibility whatsoever.",
+        "industryComparison": "Standard across AI industry, but notable given how many people use ChatGPT for high-stakes tasks."
+      }
+    ],
+    "bottomLine": "ChatGPT offers a powerful AI assistant but collects extensive conversation data for model training by default. The opt-out exists but isn't prominent. Human review of conversations and zero liability for output accuracy are standard industry practices but worth understanding. If you use ChatGPT for sensitive work, turn off training in Settings > Data Controls."
+  }
+}

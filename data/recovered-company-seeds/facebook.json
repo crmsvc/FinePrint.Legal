@@ -1,0 +1,116 @@
+{
+  "slug": "facebook",
+  "name": "Facebook (Meta)",
+  "grade": "D",
+  "verdict": "One of the most invasive data collection ecosystems on the internet, tracking you across apps and the web.",
+  "lastAnalyzed": "2026-03-13",
+  "sourceUrl": "https://www.facebook.com/terms.php",
+  "analysis": {
+    "mode": "full",
+    "grade": "D",
+    "verdict": "One of the most invasive data collection ecosystems on the internet, tracking you across apps and the web.",
+    "whatTheyCollect": [
+      {
+        "category": "Content & Activity",
+        "details": "Every post, photo, video, message, comment, reaction, group interaction, marketplace listing, and story you create or engage with.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Cross-Platform Tracking",
+        "details": "Activity across Facebook, Instagram, WhatsApp, Messenger, and Threads is combined into a unified profile.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Off-Platform Activity",
+        "details": "Websites and apps that use Meta pixels, login buttons, or ad tools report your activity back to Meta.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Device & Network Data",
+        "details": "Device hardware, OS, battery level, signal strength, available storage, Bluetooth signals, nearby Wi-Fi networks, and GPS location.",
+        "mandatory": true,
+        "riskLevel": "HIGH"
+      },
+      {
+        "category": "Face & Voice Data",
+        "details": "Facial recognition data from photos and videos, voice data from audio features when enabled.",
+        "mandatory": false,
+        "riskLevel": "HIGH"
+      }
+    ],
+    "whatTheyDoWithData": [
+      {
+        "practice": "Targeted Advertising",
+        "details": "Your data powers one of the largest ad networks in the world. Advertisers can target you by demographics, interests, behaviors, and lookalike audiences.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Cross-App Data Merging",
+        "details": "Data from Facebook, Instagram, WhatsApp, and Messenger is combined to build comprehensive behavioral profiles.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "Third-Party Data Sharing",
+        "details": "Data is shared with advertisers, analytics partners, measurement companies, and app developers in the Meta ecosystem.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "practice": "AI Training & Research",
+        "details": "Public posts and interactions may be used to train Meta's AI models including Llama and Meta AI assistant.",
+        "riskLevel": "MEDIUM"
+      }
+    ],
+    "rightsYouGiveUp": [
+      {
+        "title": "Broad Content License",
+        "originalText": "You grant us a non-exclusive, transferable, sub-licensable, royalty-free, and worldwide license to host, use, distribute, modify, run, copy, publicly perform or display, translate, and create derivative works of your content.",
+        "translation": "Meta can do almost anything with your photos, videos, and posts — including letting other companies use them. This applies globally and costs them nothing.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "title": "Data Usage Beyond the Platform",
+        "originalText": "We use information about you across our Products and features for the purposes described in this policy.",
+        "translation": "What you do on Facebook follows you to Instagram, WhatsApp, Messenger, and wherever else Meta operates. There's no firewall between services.",
+        "riskLevel": "HIGH"
+      },
+      {
+        "title": "Algorithmic Profiling",
+        "originalText": "We use the information we collect to personalize features and content and make suggestions for you.",
+        "translation": "Meta builds a detailed psychological profile to predict your behavior, influence what you see, and maximize time spent on their platforms.",
+        "riskLevel": "HIGH"
+      }
+    ],
+    "howToLeave": {
+      "canDelete": "Yes — account deletion is available but takes up to 90 days to fully process. Some data may be retained in backups.",
+      "dataRetention": "Meta retains data for 'as long as necessary' and some data survives account deletion in anonymized or aggregated form.",
+      "dataPortability": "Download Your Information tool available. Supports data transfer to other services via the Data Transfer Project.",
+      "overallDifficulty": "HIGH"
+    },
+    "redFlags": [
+      {
+        "clause": "Off-platform tracking via Meta Pixel",
+        "whyItMatters": "Millions of websites send your browsing data to Meta even when you're not using Facebook. This creates a shadow profile of your entire internet activity.",
+        "industryComparison": "Google has similar reach with Analytics, but Meta's pixel network is specifically designed for ad targeting rather than website analytics."
+      },
+      {
+        "clause": "Cross-platform data merging across Meta family",
+        "whyItMatters": "Your WhatsApp contacts, Instagram browsing, Facebook likes, and Messenger conversations are all merged. You can't use one service without feeding data to all others.",
+        "industryComparison": "Google merges data across services too, but Meta's combination of private messaging + social + photo sharing creates an unusually intimate profile."
+      },
+      {
+        "clause": "90-day deletion delay with backup retention",
+        "whyItMatters": "Even after you decide to leave, Meta keeps your data for months. Some information may persist indefinitely in 'anonymized' form that could potentially be re-identified.",
+        "industryComparison": "Most services delete within 30 days. Meta's 90-day window is among the longest in the industry."
+      },
+      {
+        "clause": "Facial recognition data collection",
+        "whyItMatters": "Meta has collected one of the largest facial recognition datasets in history. Even if the feature is 'off,' the infrastructure and historical data remain.",
+        "industryComparison": "Most social platforms have avoided facial recognition entirely due to privacy lawsuits. Meta paid $1.4 billion to settle an Illinois biometric privacy case."
+      }
+    ],
+    "bottomLine": "Facebook's terms enable one of the most comprehensive personal data collection operations ever built. Data is gathered across every Meta app, across the web via pixels, and used primarily to power advertising. Leaving is slow and incomplete. If you use Facebook, assume everything you do — and much of what you do elsewhere online — is tracked and monetized."
+  }
+}
