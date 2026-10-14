@@ -1,0 +1,58 @@
+# FinePrint — fineprint.legal
+> We read the fine print so you don't have to.
+
+FinePrint is a free AI-powered tool that analyzes Terms of Service and Privacy Policies in plain English. Users can paste a URL, paste text directly, or upload a document (.txt, .pdf, .docx) and receive a letter-graded breakdown of what they're agreeing to.
+
+## Key Features
+- Letter grade scoring (A+ through F) based on weighted criteria
+- 7-section analysis: data collection, data practices, rights surrendered, exit difficulty, red flags, and bottom line
+- URL fetching: paste any URL to a company's TOS page
+- File upload support: .txt, .pdf, .docx
+- Risk badges (LOW / MEDIUM / HIGH) on every clause
+- Pre-analyzed company pages with searchable index
+- 15 educational guides explaining common legal concepts
+- Share system with dynamic OG image generation
+- Hall of Fame for companies with B- or higher grades
+- Wall of Shame for user-submitted problematic policies
+
+## Important Disclaimers
+- FinePrint is NOT a law firm and does NOT provide legal advice
+- All analysis is educational and informational only
+- AI analysis may contain errors or miss important nuances
+- Always consult a qualified attorney for legal decisions
+
+## Pages
+- / — Homepage with analysis tool
+- /about — About FinePrint
+- /company — Index of analyzed companies
+- /company/[slug] — Individual company analysis (13 companies)
+- /guides — Educational guides about TOS concepts
+- /guides/[slug] — Individual guide (15 guides)
+- /how-we-grade — Grading methodology, criteria, and FAQ
+- /hall-of-fame — Companies with B- or higher grades
+- /wall-of-shame — User-submitted problematic policies
+- /privacy — Privacy policy
+- /terms — Terms of service
+- /disclaimer — Legal disclaimer
+
+## Analyzed Companies (13)
+- ChatGPT/OpenAI (C-), DecipherDocs.com (B-), Design.com (C-), Discord (C-)
+- Facebook/Meta (D+), Google (C-), Instagram (C-), LinkedIn (C-)
+- Reddit (D+), Spotify (D+), TikTok (D+), Uber (D-), X/Twitter (D-)
+
+## Guides (15)
+- What Is a Binding Arbitration Clause?
+- What Happens to Your Data After You Delete Your Account?
+- What Does 'Non-Exclusive Worldwide License' Mean?
+- What Does a 'Perpetual License' on Your Content Mean?
+- Your Right to Opt Out: What It Actually Means
+- What Is a Class Action Waiver?
+- "We May Share Your Data" — What It Really Means
+- What Is an End-User License Agreement (EULA)?
+- The Right to Be Forgotten: Can You Actually Get Your Data Deleted?
+- Auto-Renewal Terms: What You Need to Know
+- Can Companies Change Their Terms Without Notice?
+- What Data Do Apps Actually Collect About You?
+- AI Training and Your Data Privacy
+- GDPR Explained: Your Data Rights in the EU
+- CCPA Privacy Rights: What California Law Gives You
